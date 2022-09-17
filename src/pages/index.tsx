@@ -1,21 +1,41 @@
 import type { NextPage } from "next";
+
 const Home: NextPage = () => {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <button className="btn btn-primary">Hello</button>
-      <div className="flex flex-row">
-        <div className="mockup-code justify-center">
-          <pre data-prefix="$">
-            <code>npm i daisyui</code>
-          </pre>
-
-          <pre data-prefix=">" className="text-warning">
-            <code>installing...</code>
-          </pre>
-          <pre data-prefix=">" className="text-success">
-            <code>Done!</code>
-          </pre>
+      <div className="flex h-screen items-center justify-center">
+        <div className="flex w-2/3 justify-evenly">
+          <div className="card w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div className="card-body items-center text-center">
+              <h2 className="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div className="card-actions justify-end">
+                <button className="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div className="divider divider-horizontal">OR</div>
+          <div className="card w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ahri_0.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div className="card-actions justify-end">
+                <button className="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
